@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دوره پایتون | Xana</title>
+  <style>
+    :root {
+      --bg: #f3f6f4;
+      --panel: #ffffff;
+      --ink: #132018;
+      --muted: #4a5b50;
+      --brand: #116149;
+      --brand-2: #0b7a61;
+      --line: #d8e3dc;
+      --accent: #e6f4ee;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Vazirmatn", Tahoma, sans-serif;
+      background: radial-gradient(circle at top right, #e8f8ef 0%, var(--bg) 45%, #edf1ef 100%);
+      color: var(--ink);
+      line-height: 1.9;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 3.5rem 0 2rem;
+    }
+
+    .hero-card {
+      background: linear-gradient(140deg, #0f5842, #0d6d56 55%, #0f8f73);
+      color: #f7fffc;
+      border-radius: 24px;
+      padding: 2rem;
+      box-shadow: 0 20px 40px rgba(11, 77, 60, 0.18);
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.35);
+      padding: .3rem .8rem;
+      border-radius: 999px;
+      font-size: .85rem;
+      margin-bottom: 1rem;
+    }
+
+    h1, h2 { margin: 0 0 .9rem; line-height: 1.4; }
+    h1 { font-size: clamp(1.5rem, 2vw + 1rem, 2.2rem); }
+    h2 { font-size: clamp(1.2rem, 1.2vw + .9rem, 1.6rem); }
+
+    .hero p { margin: 0; color: #e6fff6; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 1.2rem;
+      box-shadow: 0 10px 20px rgba(19, 32, 24, 0.05);
+    }
+
+    .span-8 { grid-column: span 8; }
+    .span-4 { grid-column: span 4; }
+    .span-6 { grid-column: span 6; }
+
+    .muted { color: var(--muted); }
+
+    ul { margin: 0; padding-right: 1.2rem; }
+
+    .pill {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--brand);
+      border: 1px solid #cbe5db;
+      border-radius: 999px;
+      padding: .2rem .7rem;
+      font-size: .85rem;
+      margin-left: .4rem;
+      margin-bottom: .4rem;
+    }
+
+    .teacher {
+      display: flex;
+      align-items: center;
+      gap: .9rem;
+    }
+
+    .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(160deg, #b8dfd1, #80bba6);
+      display: grid;
+      place-items: center;
+      color: #083728;
+      font-weight: 700;
+      font-size: 1.1rem;
+      flex: 0 0 64px;
+    }
+
+    .contact-box {
+      background: #0f1d16;
+      color: #effff7;
+      border-radius: 18px;
+      padding: 1.2rem;
+    }
+
+    .contact-box a {
+      color: #7df2cd;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      color: #597066;
+      padding: 1rem 0 2rem;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 850px) {
+      .span-8, .span-6, .span-4 { grid-column: span 12; }
+      .hero-card { padding: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <span class="badge">دوره تخصصی برنامه نویسی</span>
+        <h1>دوره پایتون (Python)</h1>
+        <p>
+          آموزش کاربردی پایتون از مفاهیم پایه تا پروژه های واقعی برای ورود به بازار کار، تحلیل داده و توسعه ابزارهای هوشمند.
+        </p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card span-8">
+        <h2>اطلاعات دوره</h2>
+        <p class="muted">
+          این دوره برای دانشجویان، برنامه نویسان تازه کار و افرادی طراحی شده است که می خواهند برنامه نویسی را اصولی یاد بگیرند.
+        </p>
+        <div>
+          <span class="pill">سطح: مقدماتی تا متوسط</span>
+          <span class="pill">مدت: 24 جلسه</span>
+          <span class="pill">پیش نیاز: ندارد</span>
+        </div>
+        <h2 style="margin-top:1rem;">سرفصل های اصلی</h2>
+        <ul>
+          <li>مبانی برنامه نویسی و منطق حل مسئله</li>
+          <li>ساختارهای داده و کنترل جریان در پایتون</li>
+          <li>توابع، ماژول ها و مدیریت خطا</li>
+          <li>کار با فایل ها و داده های واقعی</li>
+          <li>مقدمه ای بر کتابخانه های کاربردی مانند Pandas و Matplotlib</li>
+          <li>انجام پروژه نهایی و جمع بندی</li>
+        </ul>
+      </article>
+
+      <aside class="card span-4">
+        <h2>نحوه برگزاری</h2>
+        <p class="muted">این دوره فقط در دو حالت زیر برگزار می شود:</p>
+        <ul>
+          <li>حضوری</li>
+          <li>مجازی (آنلاین)</li>
+        </ul>
+      </aside>
+
+      <article class="card span-6">
+        <h2>معرفی مدرس</h2>
+        <div class="teacher">
+          <div class="avatar">PY</div>
+          <div>
+            <strong>مهندس مهدی رضایی</strong>
+            <div class="muted">مدرس پایتون، هوش مصنوعی و مبانی برنامه نویسی</div>
+          </div>
+        </div>
+        <p class="muted" style="margin-top:.8rem;">
+          دارای تجربه آموزش سازمانی و آکادمیک، با تمرکز بر تدریس پروژه محور و انتقال مفاهیم به زبان ساده.
+        </p>
+      </article>
+
+      <section class="span-6">
+        <div class="contact-box">
+          <h2>هماهنگی برگزاری دوره</h2>
+          <p>
+            برای ثبت نام، دریافت مشاوره و هماهنگی زمان برگزاری کلاس حضوری یا مجازی با ما در تماس باشید.
+          </p>
+          <p>
+            تلفن: <a href="tel:+989121234567">0912-123-4567</a><br />
+            واتساپ: <a href="https://wa.me/989121234567">پیام در واتساپ</a><br />
+            ایمیل: <a href="mailto:info@xana.ir">info@xana.ir</a>
+          </p>
+          <p class="muted" style="color:#c5ddd3; margin:0;">
+            ساعات پاسخگویی: شنبه تا چهارشنبه، 9 تا 17
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      Xana.ir | صفحه معرفی دوره پایتون
+    </footer>
+  </main>
+</body>
+</html>

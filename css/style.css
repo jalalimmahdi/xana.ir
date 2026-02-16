@@ -1,0 +1,227 @@
+/* ========================================
+   Color Variables & Theme Configuration
+   ======================================== */
+:root {
+  --bg: #f3f6f4;
+  --panel: #ffffff;
+  --ink: #132018;
+  --muted: #4a5b50;
+  --brand: #116149;
+  --brand-2: #0b7a61;
+  --line: #d8e3dc;
+  --accent: #e6f4ee;
+}
+
+/* ========================================
+   Global & Base Styles
+   ======================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Vazirmatn", Tahoma, sans-serif;
+  background: radial-gradient(circle at top right, #e8f8ef 0%, var(--bg) 45%, #edf1ef 100%);
+  color: var(--ink);
+  line-height: 1.9;
+}
+
+/* ========================================
+   Layout Components
+   ======================================== */
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.span-8 {
+  grid-column: span 8;
+}
+
+.span-4 {
+  grid-column: span 4;
+}
+
+.span-6 {
+  grid-column: span 6;
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+.hero {
+  padding: 3.5rem 0 2rem;
+}
+
+.hero-card {
+  background: linear-gradient(140deg, #0f5842, #0d6d56 55%, #0f8f73);
+  color: #f7fffc;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(11, 77, 60, 0.18);
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin: 0;
+  color: #e6fff6;
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+h1,
+h2 {
+  margin: 0 0 0.9rem;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.2rem);
+}
+
+h2 {
+  font-size: clamp(1.2rem, 1.2vw + 0.9rem, 1.6rem);
+}
+
+/* ========================================
+   Cards & Content Blocks
+   ======================================== */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 20px rgba(19, 32, 24, 0.05);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* ========================================
+   Lists
+   ======================================== */
+ul {
+  margin: 0;
+  padding-right: 1.2rem;
+}
+
+/* ========================================
+   Tags & Pills
+   ======================================== */
+.pill {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--brand);
+  border: 1px solid #cbe5db;
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.85rem;
+  margin-left: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ========================================
+   Teacher / User Profile
+   ======================================== */
+.teacher {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(160deg, #b8dfd1, #80bba6);
+  display: grid;
+  place-items: center;
+  color: #083728;
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex: 0 0 64px;
+}
+
+/* ========================================
+   Contact Box
+   ======================================== */
+.contact-box {
+  background: #0f1d16;
+  color: #effff7;
+  border-radius: 18px;
+  padding: 1.2rem;
+}
+
+.contact-box a {
+  color: #7df2cd;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+footer {
+  text-align: center;
+  color: #597066;
+  padding: 1rem 0 2rem;
+  font-size: 0.9rem;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 850px) {
+  .span-8,
+  .span-6,
+  .span-4 {
+    grid-column: span 12;
+  }
+
+  .hero-card {
+    padding: 1.4rem;
+  }
+}
+
+/* ========================================
+   Tablet & Small Screens
+   ======================================== */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  .grid {
+    gap: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
