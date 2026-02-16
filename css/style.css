@@ -225,3 +225,15 @@ footer {
     font-size: 1.1rem;
   }
 }
+
+/* ========================================
+   Utility classes (for extracted inline styles)
+   ======================================== */
+.mt-1 { margin-top: 1rem; }
+.mt-1-5 { margin-top: 1.5rem; }
+.mt-08 { margin-top: 0.8rem; }
+.mb-08 { margin-bottom: 0.8rem; }
+.no-margin { margin: 0; }
+.fs-09 { font-size: 0.9rem; }
+.link-brand { color: var(--brand); text-decoration: none; font-weight: 600; }
+.muted-contrast { color: #c5ddd3; }
